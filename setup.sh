@@ -26,6 +26,8 @@ cd $WORK_DIR/repos/tmux/
 ./configure
 make -j 48
 sudo make install
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+cp $WORK_DIR/dotfiles/.tmux.conf ~/.tmux.conf
 
 # ZSH
 cd $WORK_DIR/repos/zsh/
