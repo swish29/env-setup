@@ -43,6 +43,7 @@ cd $WORK_DIR/repos/powerline
 pip install --upgrade pip
 pip install --user --editable=`pwd`
 sudo ln -s `pwd`/scripts/powerline /usr/bin
+sudo ln -s `pwd`/scripts/powerline-config /usr/bin
 sudo ln -s `pwd`/scripts/powerline-daemon /usr/bin
 
 # STGIT
