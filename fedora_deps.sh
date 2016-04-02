@@ -10,7 +10,7 @@ dnf remove -y \
 	vim-enhanced \
 	stgit
 
-dnf clean -y
+dnf clean all -y
 
 dnf update -y
 
@@ -24,4 +24,4 @@ dnf install -y \
 	ncurses-devel \
 	libevent-devel
 
-dnf clean -y
+dnf clean all -y

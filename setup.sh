@@ -18,14 +18,14 @@ git clone git://repo.or.cz/stgit.git
 cd $WORK_DIR/repos/vim/
 ./configure --enable-pythoninterp
 make -j 48
-sudo make install
+make install
 
 # TMUX
 cd $WORK_DIR/repos/tmux/
 ./autogen.sh
 ./configure
 make -j 48
-sudo make install
+make install
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 cp $WORK_DIR/dotfiles/.tmux.conf ~/.tmux.conf
 
@@ -34,20 +34,20 @@ cd $WORK_DIR/repos/zsh/
 ./Util/preconfig
 ./configure
 make -j 48
-sudo make install.bin
-sudo make install.modules
-sudo make install.fns
+make install.bin
+make install.modules
+make install.fns
 cp $WORK_DIR/dotfiles/.zshrc ~/.zshrc
 
 # Powerline
 cd $WORK_DIR/repos/powerline
 pip install --upgrade pip
 pip install --user --editable=`pwd`
-sudo ln -s `pwd`/scripts/powerline /usr/bin
-sudo ln -s `pwd`/scripts/powerline-config /usr/bin
-sudo ln -s `pwd`/scripts/powerline-daemon /usr/bin
+ln -s `pwd`/scripts/powerline /usr/local/bin
+ln -s `pwd`/scripts/powerline-config /usr/local/bin
+ln -s `pwd`/scripts/powerline-daemon /usr/local/bin
 
 # STGIT
 cd $WORK_DIR/repos/stgit/
 make -j 48
-sudo make install
+make install
