@@ -19,6 +19,7 @@ cd $WORK_DIR/repos/vim/
 ./configure --enable-pythoninterp
 make -j 48
 make install
+cp $WORK_DIR/dotfiles/.vimrc ~/.vimrc
 
 # TMUX
 cd $WORK_DIR/repos/tmux/
