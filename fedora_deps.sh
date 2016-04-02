@@ -5,6 +5,7 @@ dnf install -y \
 	make \
 	automake \
 	gcc \
+	python-devel \
 	python-pip \
 	ncurses-devel \
 	libevent-devel
