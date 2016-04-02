@@ -1,5 +1,19 @@
 #!/bin/bash
 
+dnf remove -y \
+	vim \
+	powerline \
+	tmux \
+	tmux-powerline \
+	vim-powerline \
+	vim-minimal \
+	vim-enhanced \
+	stgit
+
+dnf clean -y
+
+dnf update -y
+
 dnf install -y \
 	git \
 	make \
@@ -9,3 +23,5 @@ dnf install -y \
 	python-pip \
 	ncurses-devel \
 	libevent-devel
+
+dnf clean -y

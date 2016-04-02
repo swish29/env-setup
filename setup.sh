@@ -37,6 +37,7 @@ make -j 48
 sudo make install.bin
 sudo make install.modules
 sudo make install.fns
+cp $WORK_DIR/dotfiles/.zshrc ~/.zshrc
 
 # Powerline
 cd $WORK_DIR/repos/powerline
