@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 dnf remove -y \
 	vim \
@@ -15,6 +16,7 @@ dnf clean all -y
 dnf update -y
 
 dnf install -y \
+	sudo \
 	git \
 	make \
 	automake \
